@@ -22,6 +22,19 @@ a {
   color: white
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font: inherit;
 
@@ -34,12 +47,25 @@ a {
   border: none;
 }
 
+.login-link::before {
+  background-image: url("../img/svg/login.svg");
+  content: "";
+  position: relative;
+  float: left;
+  margin: 5px 15px 0 0;
+  width: 14px;
+  height: 14px;
+  filter:brightness(0.5);
+}
+
+.login-link:hover::before{
+  filter:brightness(1);
+}
+
 .navigation {
   font-size: 16px;
   line-height: 20px;
   color: white;
-
-  background-color: black;
 }
 
 .main-header ul,
@@ -119,4 +145,126 @@ a {
 .footer-copyright .button:hover {
   background-color: white;
   color: black;
+}
+
+
+
+
+
+/* СЕТКИ: */
+
+.main-header {
+  background-color: black;
+  margin-bottom: 60px;
+} 
+
+.main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+} 
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.top-menu {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-menu li a,
+.login-link {
+  padding: 26px 20px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.features-item {
+  max-width: 30%;
+}
+
+.rhomb {
+  margin-top: -20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #f7f4f1;
+  transform: rotate(45deg);
+}
+
+.features {
+  margin-bottom: 60px;
+}
+
+.main-header {
+  position: sticky;
+  top: 0px;
+}
+
+.columns {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.columns section {
+  margin-left: 80px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  flex-grow: 1;
+}
+
+.columns section:last-child {
+  margin-right: 80px;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+}
+.news-item {
+  margin-bottom: 14px;
+}
+
+.news-item p {
+  margin: 0;
+}
+.gallery,
+.appt {
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.gallery {
+  padding:0;
+}
+
+.gallery-item {
+  margin:0;
+}
+
+.buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  width: 140px;
+  padding: 16px 0;
 }

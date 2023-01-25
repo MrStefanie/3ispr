@@ -12,6 +12,9 @@
 </head>
 <body>
     <header class="main-header">
+
+        <div class="container">
+
         <nav class="navigation">
             <ul class="top-menu">
                 <li><a href="#">Информация</a></li>
@@ -21,39 +24,40 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="user-menu">
-            <li>
                 <a class="login-link" href="#">Вход</a>
-            </li>
-        </ul>
+        </div>
     </header>
 
     <main class="container">
         <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
-        <img src="" class="logo" alt="">
+        <img src="img/svg/index-logo.svg" class="main-logo" width="371px" alt="">
         <section class="features">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="features-list">
               <li class="features-item">
                 <h3>Быстро</h3>
+                <span class="rhomb"></span>
                 <p>
                     Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!
                 </p>
             </li>
             <li class="features-item">
                 <h3>Круто</h3>
+                <span class="rhomb"></span>
                 <p>
                     Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
                 </p>
             </li>
             <li class="features-item">
                 <h3>Дорого</h3>
+                <span class="rhomb"></span>
                 <p>
                     Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
                 </p>
             </li>
             </ul>
         </section>
+
         <div class="columns">
           <section class="news">
             <h2>Новости</h2>
@@ -74,12 +78,15 @@
           <section class="gallery">
             <h2>Фотогалерея</h2>
                 <figure class="gallery-item">
-                    <img src="img/gallery-1.jpg" alt="Интерьер Барбершопа">
+                    <img src="img/gallery-1.jpg" width="300px" alt="Интерьер Барбершопа">
                 </figure>
+                <div class="buttons">
                 <button class="button" type="button">Назад</button>
                 <button class="button" type="button">Вперед</button>
+                </div>
           </section>
         </div>
+
         <div class="columns">
             <section class="contacts">
                 <h2>Контактная информация</h2>
@@ -97,7 +104,7 @@
                 <a href="#" class="button">Обратная связь</a>
             </section>
             <section class="appt">
-                <h3>Записаться</h3>
+                <h2>Записаться</h2>
                 <p class="appt-info">
                     Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
                 </p>
@@ -122,6 +129,7 @@
                 </form>
             </section>
         </div>
+        
     </main>
     <footer class="main-footer">
         <p class="footer-contacts">
