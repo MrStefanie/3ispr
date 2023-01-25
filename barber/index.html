@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Барбершоп "Бородинский"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Барбершоп "Бородинский"</h1>
-        <nav>
-            <ul>
+    <header class="main-header">
+        <nav class="navigation">
+            <ul class="top-menu">
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Прайс-лист</a></li>
@@ -18,31 +21,32 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
+        <ul class="user-menu">
             <li>
-                <a href="#">Вход</a>
+                <a class="login-link" href="#">Вход</a>
             </li>
         </ul>
     </header>
 
     <main class="container">
+        <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
         <img src="" class="logo" alt="">
         <section class="features">
-            <h2>Наши преимущества:</h2>
-            <ul>
-              <li>
+            <h2 class="visually-hidden">Наши преимущества</h2>
+            <ul class="features-list">
+              <li class="features-item">
                 <h3>Быстро</h3>
                 <p>
                     Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!
                 </p>
             </li>
-            <li>
+            <li class="features-item">
                 <h3>Круто</h3>
                 <p>
                     Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
                 </p>
             </li>
-            <li>
+            <li class="features-item">
                 <h3>Дорого</h3>
                 <p>
                     Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
@@ -53,27 +57,27 @@
         <div class="columns">
           <section class="news">
             <h2>Новости</h2>
-            <ul>
-                <li>
+            <ul class="news-list">
+                <li class="news-item">
                     <p>
                         Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
                     </p>
                     <time datetime="2023-01-11">11 января</time>
                 </li>
-                <li>
+                <li class="news-item">
                     <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды!</p>
                     <time datetime="2023-01-18">18 января</time>
                 </li>
             </ul>
-            <a href="#">Все новости</a>
+            <a class="button" href="#">Все новости</a>
           </section>
-          <section>
-            <h2>Фотогалерея</h3>
-                <figure>
-                    <img src="" alt="Интерьер Барбершопа">
+          <section class="gallery">
+            <h2>Фотогалерея</h2>
+                <figure class="gallery-item">
+                    <img src="img/gallery-1.jpg" alt="Интерьер Барбершопа">
                 </figure>
-                <button type="button">Назад</button>
-                <button type="button">Вперед</button>
+                <button class="button" type="button">Назад</button>
+                <button class="button" type="button">Вперед</button>
           </section>
         </div>
         <div class="columns">
@@ -89,26 +93,28 @@
                     ПН-ПТ: С 10:00 до 22:00 <br>
                     СБ-ВС: с 10:00 до 19:00
                 </p>
+                <a href="#" class="button">Как проехать</a>
+                <a href="#" class="button">Обратная связь</a>
             </section>
-            <section class="zapis">
+            <section class="appt">
                 <h3>Записаться</h3>
-                <p>
-                    Укажите желаемую дату и время и свяжемся с вами для подтверждения брони
+                <p class="appt-info">
+                    Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
                 </p>
-                <form action="https://eojqeselj7la54u.m.pipedream.net" method="post">
-                    <p>
+                <form class="appt-form" action="https://eojqeselj7la54u.m.pipedream.net" method="post">
+                    <p class="appt-item">
                         <label for="appt-date">Дата</label>
                         <input id="appt-date" type="date" name="date">
                     </p>
-                    <p>
+                    <p class="appt-item">
                         <label for="appt-time">Время</label>
                         <input id="appt-time" type="time" name="time">
                     </p>
-                    <p>
+                    <p class="appt-item">
                         <label for="appt-name">Ваше имя</label>
                         <input id="appt-name" type="text" name="name" placeholder="Степан Олегович">
                     </p>
-                    <p>
+                    <p class="appt-item">
                         <label for="appt-phone">Телефон</label>
                         <input id="appt-phone" type="tel" name="phone" placeholder="+7 800 555-35-35">
                     </p>
@@ -117,24 +123,24 @@
             </section>
         </div>
     </main>
-    <footer>
-        <p>
+    <footer class="main-footer">
+        <p class="footer-contacts">
             Барбершоп "Бородинский"<br>
             Адрес: г. Ногинск, ул. Пушкина, д. Колотушкина<br>
             <a href="#">Как нас найти?</a><br>
             Телефон: +7 (495) 666-02-66
         </p>
-        <p>
+        <div class="footer-socials">
             Давайте дружить! 
-            <ul>
-                <li><a href="">ВКонтакте</a></li>
-                <li><a href="">Фейсбук</a></li>
-                <li><a href="">Инстаграм</a></li>
+            <ul class="social-list">
+                <li><a class="social-button" href="">ВКонтакте</a></li>
+                <li><a class="social-button" href="">Фейсбук</a></li>
+                <li><a class="social-button" href="">Инстаграм</a></li>
             </ul>
-        </p>
-        <p>
+        </div>
+        <p class="footer-copyright">
             Разработано:
-            <a>NOGKOLLEDZH</a>
+            <a class="button" href="#">NOGKOLLEDZH</a>
         </p>
     </footer>
 </body>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'PT Sans Narrow', 'Arial Narrow', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+
+  background-color: black;
+  background-image: url("../img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+img { max-width: 100%;}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  text-transform: uppercase;
+
+  background-color: black;
+  border: none;
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+
+  background-color: black;
+}
+
+.main-header ul,
+.features ul,
+.news ul,
+.main-footer ul {
+  list-style: none;
+}
+
+.main-header a:hover,
+.main-header a:focus {
+  background-color: #272727;
+}
+
+.features-item {
+  text-align: center;
+}
+
+.features-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.columns {
+  color: black;
+  background-color: #f8f5f2;
+}
+
+.columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news time {
+  text-transform: none;
+}
+
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.appt-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.appt-item input:focus {
+  border-color: royalblue;
+}
+
+.main-footer {
+  color: white;
+
+  background-color: #212121;
+}
+
+.footer-contacts a { 
+   text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus { 
+  text-decoration: none;
+}
+
+.footer-socials {
+  text-align: center;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright .button:hover {
+  background-color: white;
+  color: black;
+}
